@@ -17,9 +17,9 @@
     [super viewDidLoad];
 
     FJXmlToJSon *xml = [[FJXmlToJSon alloc]init];
-    NSString *path=[[NSBundle mainBundle] pathForResource:@"strings藏" ofType:@"xml"];
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"strings" ofType:@"xml"];
     
-    [xml xmlToJson:path fileName:@"strings藏" resultDic:^(NSDictionary *resultDic) {
+    [xml xmlToJson:path fileName:@"strings" resultDic:^(NSDictionary *resultDic) {
        
         NSLog(@"%@",resultDic);
         

@@ -69,7 +69,10 @@
         
         NSLog(@"%@",currentValue);
         
-        [valueArray addObject:currentValue];
+        if (![currentValue isEqualToString:@"\n\n    "]) {
+            
+            [valueArray addObject:currentValue];
+        }
         currentValue = nil;
     }
     currentValue = [[NSMutableString alloc]init];
